@@ -720,7 +720,6 @@ def _gi_build_stub(
             ret += f"class {name}{string_parents}: ...\n"
         else:
             ret += f"class {name}{string_parents}:\n"
-
             # extracting docs
             doc = getattr(obj, "__doc__", "") or ""
             gdoc = getattr(obj, "__gdoc__", "") or ""
